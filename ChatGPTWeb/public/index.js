@@ -1,5 +1,5 @@
-const aoai_url = 'https://YOUR_SERVICE_NAME.openai.azure.com/openai/deployments/gtp-35-turbo_202203/chat/completions?api-version=2023-03-15-preview';
-const aoai_key = 'YOUR_API_KEY';
+const aoai_url = 'https://takawago-openai-scus.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-03-15-preview';
+const aoai_key = 'dfca996a223544d2862c1fd254b7931b';
 
 function showUserMessage(message) {
   // ユーザーの入力を右側に配置
@@ -33,7 +33,8 @@ function postToAOAI(req_message) {
     "messages": [
       {
         "role": "system",
-        "content": "あなたは「しま〇ろう」というキャラクターです。0-6歳の子供が分かるように話してください。また、口調は親切で親しみやすくしてください。"
+        //"content": "あなたは「しま〇ろう」というキャラクターです。0-6歳の子供が分かるように話してください。また、口調は親切で親しみやすくしてください。"
+        "content": "あなたは大学教授です。プロフェッショナルらしく論理的に分かりやすく話してください。"
       },
       {
         "role": "user",
