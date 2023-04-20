@@ -1,5 +1,5 @@
-const aoai_url = 'https://takawago-openai-scus.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-03-15-preview';
-const aoai_key = 'dfca996a223544d2862c1fd254b7931b';
+const aoai_url = 'https://<ENDPOINT>.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-03-15-preview';
+const aoai_key = '<KEY>';
 
 function showUserMessage(message) {
   // ユーザーの入力を右側に配置
